@@ -1,0 +1,36 @@
+.info-field{
+    font-size: 16px;
+    --background:#C5C5C5;
+    color: black;
+
+}
+
+
+.header{
+    --background: #FFD200;
+    color: #0064A4;
+}
+
+.sub-header{
+    font-size: 20px;
+    --background : #C5C5C5;
+    color: black;
+}
+
+ion-content{
+    --background: #C5C5C5;
+}
+
+ion-segment{
+    --background: #757575;
+    color: black;
+    --padding-bottom: 50em; 
+}
+
+.background{
+    --background:  #C5C5C5;
+}
+
+.center{
+    text-align:center;
+}
