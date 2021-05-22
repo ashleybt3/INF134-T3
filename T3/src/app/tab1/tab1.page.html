@@ -1,17 +1,38 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
+  <ion-toolbar color="warning" class="myToolbar">
+    <ion-title>Marketplace</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar class="my-toolbar" mode="md">
-      <ion-title>Marketplace</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="content">
+  <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
-  <app-explore-container name="Home"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="plus-button">
+    <ion-fab-button color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+   <ion-card>
+    <img src="assets/calculator.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>SCHOOL SUPPLIES</ion-card-subtitle>
+      <ion-card-title>TI-85 Calculator</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Used TI-85 calculator. It works perfectly!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/textbook.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>SCHOOL SUPPLIES</ion-card-subtitle>
+      <ion-card-title>BetterPhoto Basics Textbook</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Brand new BetterPhoto Basics textbook for photography.
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
