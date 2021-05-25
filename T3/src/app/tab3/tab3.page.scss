@@ -10,12 +10,33 @@
 .cards{
     --background: #C6BEB5;
     --color: #000000;
+    
 }
 
 .cardTitle{
     --color: #000000;
+
     display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    
+    
 }
+
+
+.cardHeader{
+    --color: #000000;
+    width:300px;
+    margin-right: 25px;
+    height: 32;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 ion-card-title{
     font-size: 22px !important;
