@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Account
+      Tab 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,117 +9,10 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Account</ion-title>
+      <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-icon name="person-circle-outline" id="user-icon"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-text>
-          <h5>Username</h5>
-        </ion-text>
-        <ion-text>
-          <h5>Email</h5>
-        </ion-text>
-      </ion-col>
-    </ion-row>
-
-    <div class="info">
-      <ion-row class="wrap-text">
-        <ion-text>
-          <h5>Contact Info</h5>
-        </ion-text>
-      </ion-row>
-
-      <ion-row>
-        <ion-col class="wrap-input">
-          <ion-input placeholder="XXX-XXXX-XXXX"></ion-input>
-        </ion-col>
-        <ion-col size=4 class="wrap-icon">
-          <ion-icon name="create-outline" size="large" class="icon"></ion-icon>
-        </ion-col>
-      </ion-row>
-
-      <ion-row class="wrap-text">
-        <ion-text>
-          <h5>Meeting Location</h5>
-        </ion-text>
-      </ion-row>
-
-      <ion-row style="margin-bottom: 20px;">
-        <ion-col class="wrap-input">
-          <ion-input placeholder="Example Location"></ion-input>
-        </ion-col>
-        <ion-col size=2 class="wrap-icon">
-          <ion-icon name="create-outline" size="large" class="icon"></ion-icon>
-        </ion-col>
-        <ion-col size=2 class="wrap-icon">
-          <ion-icon name="location-outline" size="large" class="icon"></ion-icon>
-        </ion-col>
-      </ion-row>
-
-    </div>
-    <div class="segment">
-      <div class="segment-bar">
-        <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="type">
-          <ion-segment-button value="My Posts">
-            <ion-label>My Posts</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="Bought">
-            <ion-label>Bought</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="Liked">
-            <ion-label>Liked</ion-label>
-          </ion-segment-button>
-        </ion-segment>
-      </div>
-
-      <div [ngSwitch]="type" class="segment-list">
-        <ion-list *ngSwitchCase="'My Posts'" class="item-list">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Textbooks</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              Used Textbooks
-            </ion-card-content>
-          </ion-card>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Notebooks</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              New Notebooks
-            </ion-card-content>
-          </ion-card>
-        </ion-list>
-        <ion-list *ngSwitchCase="'Bought'" class="item-list">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Lamp</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              A Nice Lamp
-            </ion-card-content>
-          </ion-card>
-        </ion-list>
-        <ion-list *ngSwitchCase="'Liked'" class="item-list">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Headphone</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              Used Headphone
-            </ion-card-content>
-          </ion-card>
-        </ion-list>
-      </div>
-    </div>
-   
-  </ion-grid>
-
+  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
+
