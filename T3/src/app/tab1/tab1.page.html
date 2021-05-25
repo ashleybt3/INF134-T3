@@ -1,12 +1,18 @@
 <ion-header >
   <ion-toolbar class = "header" >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
     <ion-title>
       Post Page
     </ion-title>
-    <ion-buttons slot="start">
+    
+
+    <!-- <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content >
@@ -43,14 +49,15 @@
         <ion-img src="assets/nintendo.jpeg"></ion-img>
       </ion-thumbnail> -->
 
-    <ion-item class="info-field">
+    <ion-item  class="info-field">
       <ion-grid >
         <ion-row>
           <ion-col style = "text-align:center">
-            <ion-button size="large" color="medium" position = "relative">
+            <ion-button (click) = "displayPhoto()" size="small" color="medium" position = "relative">
               <ion-icon name="add-outline"></ion-icon>
               Add Photo
             </ion-button>
+            <ion-img  src = "../assets/nintendo.jpeg" *ngIf = "loadPhoto"> </ion-img>
           </ion-col>
         </ion-row>
       </ion-grid>

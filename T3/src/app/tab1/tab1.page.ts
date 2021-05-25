@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  loadPhoto = false;
 
   constructor() {}
+  ngOnInit(){
+
+  }
+  displayPhoto(){
+    this.loadPhoto = true;
+    
+  }
 
 }
