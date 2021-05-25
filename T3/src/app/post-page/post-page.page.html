@@ -1,7 +1,7 @@
 <ion-header >
   <ion-toolbar class = "header" >
     <ion-buttons slot="start">
-      <ion-back-button defaultHref=""></ion-back-button>
+      <ion-back-button (click) = "presentAlert()" defaultHref=""></ion-back-button>
     </ion-buttons>
     <ion-title>
       Post Page
@@ -110,7 +110,7 @@
 
   <ion-row style="height: 20px"></ion-row>
   
-  <ion-button expand = "block"> Post </ion-button>
+  <ion-button (click) = "uploadPost()" expand = "block"> Post </ion-button>
 
   
 

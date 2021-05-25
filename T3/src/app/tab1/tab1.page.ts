@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavController } from "@ionic/angular";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-tab1',
@@ -6,15 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  loadPhoto = false;
+  nav = document.querySelector('ion-nav');
 
-  constructor() {}
+  constructor(public router: Router, public navctrl: NavController) {}
   ngOnInit(){
 
   }
-  displayPhoto(){
-    this.loadPhoto = true;
-    
+  postPage(){
+    // this.router.navigate(['/post-page'], { skipLocationChange: true});
+    this.navctrl.navigateForward('post-page');
   }
 
 }

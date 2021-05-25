@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar mode="ios"  class="myToolbar">
+  <ion-toolbar color="warning" class="myToolbar">
     <ion-title>Marketplace</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -8,7 +8,7 @@
   <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="plus-button">
-    <ion-fab-button color="primary">
+    <ion-fab-button (click) = "postPage()" color="primary">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
