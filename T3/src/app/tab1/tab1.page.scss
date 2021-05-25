@@ -1,6 +1,13 @@
-// .myToolbar{
-//     --background-color:  "danger";
-// }
+.myToolbar{
+    --background:  #FFD200; //background color of the header
+    --color: #000000; //text color
+}
+
+
+ion-content {
+    --ion-background-color: #F5F5F5;
+}
+
 
 ion-card-title{
     font-size: 22px !important;
