@@ -24,25 +24,14 @@ export class PostPagePage implements OnInit {
   @ViewChild(IonBackButtonDelegate, { static: false }) backButton: IonBackButtonDelegate;
 
   ionViewDidEnter() {
-    console.log('ionViewDidEnter');
     this.setUIBackButtonAction();
   }
 
   setUIBackButtonAction() {
     this.backButton.onClick = () => {
-      // this.navctrl.navigateBack('');
     };
   }
 
-  // ionViewCanLeave(): boolean{
-  //   // here we can either return true or false
-  //   // depending on if we want to leave this view
-  //   if(confirm){
-  //      return true;
-  //    } else {
-  //      return false;
-  //    }
-  //  }
 
   displayPhoto(){
     this.loadPhoto = true;
@@ -50,6 +39,7 @@ export class PostPagePage implements OnInit {
   }
   uploadPost(){
     // this.router.navigate(['']);
+    this.loadPhoto = false;
     this.navctrl.navigateForward('', {animated:false});
     this.notification.create({
       message: 'Item has been posted!',
@@ -77,6 +67,7 @@ export class PostPagePage implements OnInit {
           text: 'Discard',
           handler: () => {
             // this.confirm = true;
+            this.loadPhoto = false;
             this.navctrl.navigateBack('');
           }
         }] 

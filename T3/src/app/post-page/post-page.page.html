@@ -6,21 +6,11 @@
     <ion-title>
       Post Page
     </ion-title>
-    
-
-    <!-- <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons> -->
   </ion-toolbar>
 
 </ion-header>
 
 <ion-content >
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
   <ion-list >
     <ion-list-header class = "sub-header">
       <ion-label>
@@ -57,7 +47,7 @@
               <ion-icon name="add-outline"></ion-icon>
               Add Photo
             </ion-button>
-            <ion-img  src = "../assets/nintendo.jpeg" *ngIf = "loadPhoto"> </ion-img>
+            <ion-img  src = "../assets/nintendo.jpg" *ngIf = "loadPhoto"> </ion-img>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -94,23 +84,25 @@
     </ion-list-header>
   </ion-list>
     
-    <ion-toolbar class = "background">
-      <ion-segment>
-        <ion-segment-button>
-          <ion-label>7 Days</ion-label>
-        </ion-segment-button>
-        <ion-segment-button>
-          <ion-label>30 Days</ion-label>
-        </ion-segment-button>
-        <ion-segment-button>
-          <ion-label>Until Sold</ion-label>
-        </ion-segment-button>
+  <ion-toolbar class = "background">
+    <ion-segment>
+      <ion-segment-button>
+        <ion-label>7 Days</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>30 Days</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Until Sold</ion-label>
+      </ion-segment-button>
     </ion-segment>
-    </ion-toolbar>
+  </ion-toolbar>
 
   <ion-row style="height: 20px"></ion-row>
   
-  <ion-button (click) = "uploadPost()" expand = "block"> Post </ion-button>
+  <ion-button class = "post" (click) = "uploadPost()" shape = "round" expand = "block" > Post </ion-button>
+
+  <ion-row style="height: 20px"></ion-row>
 
   
 
