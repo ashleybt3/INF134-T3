@@ -1,40 +1,20 @@
-.info-field{
-    font-size: 16px;
-    --background:#C5C5C5;
-    color: black;
 
+
+ion-content {
+    --ion-background-color: #F5F5F5;
 }
 
-
-.header{
-    --background: #FFD200;
-    color: #0064A4;
+.myToolbar{
+    --background:  #FFD200; //background color of the header
+    --color: #000000; //text color
+    color: #0064A4
 }
 
-.sub-header{
-    font-size: 20px;
-    --background : #C5C5C5;
-    color: black;
+ion-card-title{
+    font-size: 22px !important;
+    size: 22px !important;
 }
 
-ion-content{
-    --background: #C5C5C5;
-}
-
-ion-back-button{
-    color: #0064A4;
-}
-
-ion-segment{
-    --background: #757575;
-    color: black;
-    --padding-bottom: 50em; 
-}
-
-.background{
-    --background:  #C5C5C5;
-}
-
-.center{
-    text-align:center;
+.content { 
+    background-color: "#F5F5F5"!important;
 }

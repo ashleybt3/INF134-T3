@@ -1,118 +1,38 @@
-<ion-header >
-  <ion-toolbar class = "header" >
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref=""></ion-back-button>
-    </ion-buttons>
-    <ion-title>
-      Post Page
-    </ion-title>
-    
-
-    <!-- <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons> -->
+<ion-header [translucent]="true">
+  <ion-toolbar mode="ios"  class="myToolbar">
+    <ion-title>Marketplace</ion-title>
   </ion-toolbar>
-
 </ion-header>
 
-<ion-content >
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
-  <ion-list >
-    <ion-list-header class = "sub-header">
-      <ion-label>
-        Contact Information
-      </ion-label>
-    </ion-list-header>
-    <ion-item class="info-field">
-      <ion-label>Phone</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="info-field">
-      <ion-label>Email</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="info-field">
-      <ion-label>Location</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-list-header class = "sub-header">
-      <ion-label>
-        Item For Sale
-      </ion-label>
-    </ion-list-header>
+<ion-content [fullscreen]="true" class="content">
+  <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
-      <!-- <ion-thumbnail slot="start">
-        <ion-img src="assets/nintendo.jpeg"></ion-img>
-      </ion-thumbnail> -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="plus-button">
+    <ion-fab-button color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
-    <ion-item  class="info-field">
-      <ion-grid >
-        <ion-row>
-          <ion-col style = "text-align:center">
-            <ion-button (click) = "displayPhoto()" size="small" color="medium" position = "relative">
-              <ion-icon name="add-outline"></ion-icon>
-              Add Photo
-            </ion-button>
-            <ion-img  src = "../assets/nintendo.jpeg" *ngIf = "loadPhoto"> </ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-   
-    
+   <ion-card>
+    <img src="assets/calculator.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle >SCHOOL SUPPLIES</ion-card-subtitle>
+      <ion-card-title>TI-85 Calculator</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Used TI-85 calculator. It works perfectly!
+    </ion-card-content>
+  </ion-card>
 
-    <ion-item class="info-field">
-      <ion-label>Title</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="info-field">
-      <ion-label>Price</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="info-field"> 
-      <ion-label>Category</ion-label>
-      <ion-select class = "option" interface="popover">
-        <ion-select-option >Apparel</ion-select-option>
-        <ion-select-option >Entertainment</ion-select-option>
-        <ion-select-option>Electronics</ion-select-option>
-        <ion-select-option>Home Goods</ion-select-option>
-        <ion-select-option>Sporting Goods</ion-select-option>
-        <ion-select-option>Toys & Games</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <ion-item class="info-field">
-      <ion-textarea placeholder="Description"></ion-textarea>
-    </ion-item>
-    <ion-list-header class = "sub-header">
-      <ion-label>
-        Time For Sale
-      </ion-label>
-    </ion-list-header>
-  </ion-list>
-    
-    <ion-toolbar class = "background">
-      <ion-segment>
-        <ion-segment-button>
-          <ion-label>7 Days</ion-label>
-        </ion-segment-button>
-        <ion-segment-button>
-          <ion-label>30 Days</ion-label>
-        </ion-segment-button>
-        <ion-segment-button>
-          <ion-label>Until Sold</ion-label>
-        </ion-segment-button>
-    </ion-segment>
-    </ion-toolbar>
-
-  <ion-row style="height: 20px"></ion-row>
+  <ion-card>
+    <img src="assets/textbook.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>SCHOOL SUPPLIES</ion-card-subtitle>
+      <ion-card-title>BetterPhoto Basics Textbook</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Brand new BetterPhoto Basics textbook for photography.
+    </ion-card-content>
+  </ion-card>
   
-  <ion-button expand = "block"> Post </ion-button>
-
-  
-
-  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
