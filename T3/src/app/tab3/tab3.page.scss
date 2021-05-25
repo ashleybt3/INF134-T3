@@ -1,0 +1,24 @@
+.myToolbar{
+    --background:  #FFD200; //background color of the header
+    --color: #000000; //text color
+}
+
+.content{
+    --background: #FFFFFF;
+}
+
+.cards{
+    --background: #C6BEB5;
+    --color: #000000;
+}
+
+.cardTitle{
+    --color: #000000;
+    display: inline-block;
+}
+
+ion-card-title{
+    font-size: 22px !important;
+    size: 22px !important;
+    
+}
