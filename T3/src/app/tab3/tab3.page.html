@@ -1,65 +1,71 @@
 <ion-header [translucent]="true">
-  <ion-toolbar mode="ios" class="myToolbar">
+  <!--ios flag for the style. Automatically censors and chooses font size-->
+  <ion-toolbar mode="ios" >
     <ion-title>Messages</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="content">
+<ion-content [fullscreen]="true" >
 
-  <ion-card class = "cards">
+  <!--card that's copy/pasted for messages section.-->
+  <ion-card (click)="displayMessage()"><button class = "button"> 
     
-    <ion-card-header class = "cardHeader"> 
+    <ion-card-header> 
       <img  src="assets/person.png"/>
       &nbsp;&nbsp;
-      <ion-card-title  class = "cardTitle" mode = "ios">TI-85 Calculator</ion-card-title>
+      <ion-card-title  mode = "ios">TI-85 Calculator</ion-card-title>
       
       
-    </ion-card-header >
-    <ion-card-content>
+    </ion-card-header>
+    <ion-card-content >
       Hi Peter, I'm seeing if the calculator you have for sale is still available. Let me know if it is please. Sincerely, Harold.
     </ion-card-content>
+  </button>
   </ion-card>
 
-  <ion-card class = "cards">
+  <ion-card (click)="displayMessage()"><button class = "button">
     
-    <ion-card-header class = "cardHeader"> 
+    <ion-card-header > 
       <img src="assets/person.png"/>
       &nbsp;&nbsp;
-      <ion-card-title  class = "cardTitle" mode = "ios">Peter Stickers</ion-card-title>
+      <ion-card-title   mode = "ios">Peter Stickers</ion-card-title>
       
       
     </ion-card-header >
     <ion-card-content>
       Hi Peter, I'm seeing if the stickers you have for sale is still available. Let me know if it is please. Sincerely, Maude.
     </ion-card-content>
+  </button>
   </ion-card>
 
-  <ion-card class = "cards">
+  <ion-card (click)="displayMessage()"><button class = "button">
     
-    <ion-card-header class = "cardHeader">  
+    <ion-card-header >  
       <img  src="assets/person.png"/>
       &nbsp;&nbsp;
-      <ion-card-title  class = "cardTitle" mode = "ios">Swaggy Glasses</ion-card-title>
+      <ion-card-title  mode = "ios">Swaggy Glasses</ion-card-title>
       
       
     </ion-card-header >
     <ion-card-content>
       Hi Peter, I'm seeing if the glasses you have for sale is still available. Let me know if it is please. Sincerely, Swagman.
     </ion-card-content>
+  </button>
   </ion-card>
 
-  <ion-card class = "cards">
+  <ion-card (click)="displayMessage()"><button class = "button">
     
-    <ion-card-header class = "cardHeader"> 
+    <ion-card-header> 
       <img  src="assets/person.png"/>
       &nbsp;&nbsp;
-      <ion-card-title  class = "cardTitle" mode = "ios">Really Long Textbook Title </ion-card-title>
+      <ion-card-title   mode = "ios" >Really Long Textbook Title </ion-card-title>
       
       
     </ion-card-header >
     <ion-card-content>
       Hi Peter, I'm seeing if the textbook you have for sale is still available. Let me know if it is please. Sincerely, petr_the_anteater.
     </ion-card-content>
+  </button>
   </ion-card>
 
 

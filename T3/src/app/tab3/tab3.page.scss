@@ -1,33 +1,35 @@
-.myToolbar{
+ion-toolbar{
     --background:  #FFD200; //background color of the header
     --color: #000000; //text color
     color: #0064A4
 }
 
-.content{
+ion-content{
     --background: #FFFFFF;
+
 }
 
-.cards{
+ion-card{
     --background: #C6BEB5;
     --color: #000000;
-    
-}
 
-.cardTitle{
-    --color: #000000;
-
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
     
     
 }
 
+.button{
+    background-color: #C6BEB5;
+    color: #000000;
+    width:300px;
+    margin-right: 25px;
+    height: 32;
+    text-align: left;
 
-.cardHeader{
+}
+
+
+//tried to fix the overflow/ellipsis issue but that's harder said than done. 
+ion-card-header{
     --color: #000000;
     width:300px;
     margin-right: 25px;
@@ -40,7 +42,16 @@
 
 
 ion-card-title{
-    font-size: 22px !important;
-    size: 22px !important;
+
+    --color: #000000;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    
+    font-size: 24px !important;
+    size: 24px !important;
     
 }
