@@ -24,8 +24,13 @@ ion-card{
     margin-right: 25px;
     height: 32;
     text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
+
+
 
 
 //tried to fix the overflow/ellipsis issue but that's harder said than done. 
