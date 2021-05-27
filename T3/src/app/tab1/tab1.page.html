@@ -5,12 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="content">
-  <ion-grid>  
-    <ion-row>  
-      <ion-col size="8"><ion-searchbar showCancelButton="focus"></ion-searchbar></ion-col>  
-      <ion-col><ion-button size="small">Filter</ion-button></ion-col>  
-    </ion-row>  
-  </ion-grid> 
+  <ion-item style="display: flex; align-items: center">  
+    <ion-searchbar showCancelButton="focus" style="margin: auto 0"></ion-searchbar>
+      <ion-button id="filterButton" style="margin: auto 0" size="small"><ion-icon name="options-outline"></ion-icon></ion-button> 
+  </ion-item>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="plus-button">
     <ion-fab-button color="primary">
@@ -34,10 +32,10 @@
     <img src="assets/textbook.jpg"/>
     <ion-card-header>
       <ion-card-subtitle>SCHOOL SUPPLIES</ion-card-subtitle>
-      <ion-card-title>Photography Textbook</ion-card-title>
+      <ion-card-title>Lissabon Textbook</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Brand new Photography textbook for photography tips.
+      Brand new textbook.
     </ion-card-content>
   </ion-card>
   
