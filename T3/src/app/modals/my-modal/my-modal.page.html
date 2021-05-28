@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Filter Search</ion-title>
+    <ion-button
+      id="closeButton"
+      (click)="closeModal()">
+  <ion-icon name="close-circle-outline"></ion-icon>
+
+</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-text>Price Range</ion-text>
+<ion-item>
+  <ion-range pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
+    <ion-label slot="start">0</ion-label>
+    <ion-label slot="end">400</ion-label>
+  </ion-range>
+</ion-item>
+
+</ion-content>

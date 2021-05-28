@@ -5,9 +5,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="content">
-  <ion-item style="display: flex; align-items: center">  
-    <ion-searchbar showCancelButton="focus" style="margin: auto 0"></ion-searchbar>
-      <ion-button id="filterButton" style="margin: auto 0" size="small"><ion-icon name="options-outline"></ion-icon></ion-button> 
+  <ion-item style="display: flex; align-items: center">
+    <ion-searchbar showCancelButton="focus" style="margin: auto 0;"></ion-searchbar>
+      <ion-button id="filterButton" style="margin: auto 0" size="small" (click)="openModal()"><ion-icon name="options-outline"></ion-icon></ion-button> 
   </ion-item>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="plus-button">
