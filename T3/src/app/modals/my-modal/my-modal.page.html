@@ -1,22 +1,38 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Filter Search</ion-title>
-    <ion-button
-      id="closeButton"
-      (click)="closeModal()">
-  <ion-icon name="close-circle-outline"></ion-icon>
-
-</ion-button>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button id="closeButton" (click)="closeModal()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-text>Price Range</ion-text>
 <ion-item>
+  <ion-label position="stacked" class="filterTitle">Price Range</ion-label>
   <ion-range pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">400</ion-label>
   </ion-range>
 </ion-item>
 
+<ion-item>
+  <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
+  <ion-button id="priceUpButton">Price
+    <ion-icon slot="end" name="arrow-round-up"></ion-icon>
+  </ion-button>
+  <ion-button id="priceDownButton">Price
+    <ion-icon slot="end" name="arrow-round-down"></ion-icon>
+  </ion-button>
+  <ion-button class="sortingButton">Relevance</ion-button>
+  <ion-button class="sortingButton">Most Recent</ion-button>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked" class="filterTitle">Filters</ion-label>
+  <ion-button class="filterButton">Only Show Posts with Images</ion-button>
+  <ion-button class="filterButton">Posted Today</ion-button>
+</ion-item>
 </ion-content>

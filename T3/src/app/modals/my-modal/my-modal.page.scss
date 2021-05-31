@@ -1,6 +1,32 @@
-#closeButton {
-    // border-radius: '100%' !important;
-    // color: "blue";
-    // width: 34;
-    --ion-background-color: #ff3700;
-  }
+// #closeButton {
+//     // border-radius: '100%' !important;
+//     // color: "blue";
+//     // width: 34;
+//     --ion-background-color: #ff3700;
+//   }
+
+.filterTitle {
+   font-size: 18px !important;
+   //padding: 10px;
+   padding-bottom: 20px;
+}
+
+ion-item {
+    margin-top: 10%;
+}
+
+.sortingButton {
+    position: absolute;
+
+    left: 80px;
+}
+
+#priceDownButton {
+    position: absolute;
+    left: 80px;
+}
+
+#priceUpButton {
+    position: absolute;
+    left: 140px;
+}
