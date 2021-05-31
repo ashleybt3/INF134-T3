@@ -28,6 +28,10 @@ ion-content {
     padding-left: 10px;
 }
 
+#map-icon {
+    cursor: pointer;
+}
+
 .segment {
     background-color: white;
     margin-left: 5%;
@@ -43,9 +47,6 @@ ion-content {
 .segment-list {
 
     border-radius: 7px;
-}
-
-.item-list {
 }
 
 ion-card {
