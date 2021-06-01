@@ -1,10 +1,8 @@
-
-
 ion-content {
     --ion-background-color: #F5F5F5;
 }
 
-.myToolbar{
+.header{
     --background:  #FFD200; //background color of the header
     --color: #000000; //text color
     color: #0064A4
@@ -19,14 +17,9 @@ ion-card-title{
     background-color: "#F5F5F5"!important;
 }
 
-.search{
-    --background:#F5F5F5;
-}
-
-ion-searchbar{
-    color:black;
-}
-// #filterButton {
-//     align-self: center;
-//     vertical-align:text-bottom;
+// .message{
+//     text-align: center;
+    
 // }
+
+

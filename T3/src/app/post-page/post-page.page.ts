@@ -12,6 +12,7 @@ import { ViewChild } from '@angular/core';
 export class PostPagePage implements OnInit {
   loadPhoto = false;
   confirm = false;
+  loadSlider = false;
 
   constructor(public router: Router, public navctrl: NavController,
     public notification: ToastController, public alert: AlertController) { }
@@ -38,8 +39,8 @@ export class PostPagePage implements OnInit {
     
   }
   uploadPost(){
-    // this.router.navigate(['']);
     this.loadPhoto = false;
+    this.loadSlider = false;
     this.navctrl.navigateForward('', {animated:false});
     this.notification.create({
       message: 'Item has been posted!',
@@ -51,7 +52,6 @@ export class PostPagePage implements OnInit {
   }
 
   async presentAlert() {
-		// include an alert message if there is an incorrect time input
 		let alert = await this.alert.create({
 		  cssClass: 'Cancel Post',
 		  header: 'Discard Post?',
@@ -59,15 +59,14 @@ export class PostPagePage implements OnInit {
         {
           text:'Cancel',
           handler: () => { 
-            // let navTransition = alert.dismiss();
           }
           
         },
         {
           text: 'Discard',
           handler: () => {
-            // this.confirm = true;
             this.loadPhoto = false;
+            this.loadSlider = false;
             this.navctrl.navigateBack('');
           }
         }] 
@@ -76,9 +75,19 @@ export class PostPagePage implements OnInit {
     });
     await alert.present();
   }
+
+  segmentChanged(event){
+    if(event.detail.value == "Select"){
+      this.loadSlider = true;
+    }
+    else{
+      this.loadSlider = false;
+    }
+  }
   
   async navigate(){
     this.navctrl.navigateForward('');
+    this.loadSlider = false;
   }
 
 }

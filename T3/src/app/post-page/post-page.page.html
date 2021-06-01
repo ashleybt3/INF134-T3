@@ -69,9 +69,7 @@
         <ion-select-option >Apparel</ion-select-option>
         <ion-select-option >Entertainment</ion-select-option>
         <ion-select-option>Electronics</ion-select-option>
-        <ion-select-option>Home Goods</ion-select-option>
-        <ion-select-option>Sporting Goods</ion-select-option>
-        <ion-select-option>Toys & Games</ion-select-option>
+        <ion-select-option>Supplies</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item class="info-field">
@@ -83,28 +81,31 @@
       </ion-label>
     </ion-list-header>
   </ion-list>
-    
-  <ion-toolbar class = "background">
-    <ion-segment>
-      <ion-segment-button>
-        <ion-label>7 Days</ion-label>
+
+  <ion-toolbar class = "background" >
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value = "Select">
+        <ion-label>Select Time</ion-label>
       </ion-segment-button>
-      <ion-segment-button>
-        <ion-label>30 Days</ion-label>
-      </ion-segment-button>
-      <ion-segment-button>
-        <ion-label>Until Sold</ion-label>
+      <ion-segment-button value = "Sold">
+        <ion-label >Until Sold</ion-label>
       </ion-segment-button>
     </ion-segment>
+
   </ion-toolbar>
 
-  <ion-row style="height: 20px"></ion-row>
+  <ion-item *ngIf = "loadSlider" style = "--background: #92949c">
+    <ion-range min="1" max="365" pin  color="light">
+      <ion-label slot="start">1 day</ion-label>
+      <ion-label slot="end">365 days</ion-label>
+    </ion-range>
+  </ion-item>
+    
+
+  <!-- <ion-row style="height: 20px"></ion-row> -->
   
   <ion-button class = "post" (click) = "uploadPost()" shape = "round" expand = "block" > Post </ion-button>
 
   <ion-row style="height: 20px"></ion-row>
 
-  
-
-  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>

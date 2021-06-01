@@ -22,6 +22,10 @@ export class Tab1Page {
     this.navctrl.navigateForward('post-page');
   }
 
+  itemPage(){
+    this.navctrl.navigateForward('item-page');
+  }
+
   async openModal() {
     const modal = await this.modalController.create({
       component: MyModalPage

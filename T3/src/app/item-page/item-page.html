@@ -1,0 +1,43 @@
+<ion-header  >
+    <ion-toolbar class  = "header">
+      <ion-buttons slot="start">
+        <ion-back-button ></ion-back-button>
+      </ion-buttons>
+      <ion-title style= "color: #0064A4;" >
+        <!-- <ion-button><ion-icon style="color: black;"name ="arrow-back-outline"></ion-icon></ion-button> -->
+        Item Description
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <!-- <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title style= "color: rgb(44, 83, 201);" size = "large">Item Description</ion-title>
+      </ion-toolbar>
+    </ion-header> -->
+    <ion-card style="align-items: center;">
+      <img src="../assets/ucisweater.jpg" />
+      <ion-card-header >
+        
+        <ion-card-title  style="font-size: 5em;">
+          UCI Sweater $10.00
+        </ion-card-title>
+        <ion-card-subtitle >Slightly Worn UCI Sweater</ion-card-subtitle>
+        <ion-card-subtitle >Location:</ion-card-subtitle>
+        <ion-card-subtitle >Phone: 123-234-5667</ion-card-subtitle>
+        <ion-card-subtitle >Email: petertheanteater@uci.edu</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class = "message">
+        <ion-button fill = "clear"><ion-icon ios="heart-outline" md="heart-outline"></ion-icon> 
+        </ion-button>
+        <ion-button  (click) = "messageSeller()">Message Seller</ion-button>
+      </ion-card-content>
+      
+    </ion-card>
+  </ion-content>
+  
+  
+  
+   
+  
