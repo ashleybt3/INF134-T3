@@ -1,0 +1,25 @@
+ion-toolbar{
+    --background:  #FFD200; //background color of the header
+    --color: #000000; //text color
+    color: #0064A4
+}
+
+ion-content{
+    --background: #FFFFFF;
+
+}
+
+.left{
+    --background: #C6BEB5;
+    --color: #000000;
+    width: 75%;
+    margin-right: 25%;
+}
+
+.right{
+    --background: #0064A4;
+    --color: #FFFFFF;
+    width: 75%;
+    margin-left: 25%;
+    
+}

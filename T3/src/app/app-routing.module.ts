@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'post-page',
     loadChildren: () => import('./post-page/post-page.module').then( m => m.PostPagePageModule)
+  },
+  {
+    path: 'message-person',
+    loadChildren: () => import('./message-person/message-person.module').then( m => m.MessagePersonPageModule)
   }
 
 ];
