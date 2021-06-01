@@ -25,4 +25,11 @@ export class MyModalPage implements OnInit {
     await this.modalController.dismiss();
   }
 
+  private buttonColor: string = "gray";
+
+  changeColor() {
+    this.buttonColor = "#FFF";
+
+  }
+
 }
