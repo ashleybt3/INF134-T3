@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'message-person',
     loadChildren: () => import('./message-person/message-person.module').then( m => m.MessagePersonPageModule)
+  },
+  {
+    path: 'my-modal',
+    loadChildren: () => import('./modals/my-modal/my-modal.module').then( m => m.MyModalPageModule)
   }
 
 ];
