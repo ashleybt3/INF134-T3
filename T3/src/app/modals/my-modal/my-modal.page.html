@@ -1,38 +1,39 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Filter Search</ion-title>
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button id="closeButton" (click)="closeModal()">
-      <ion-icon name="close-circle-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+    <ion-button slot="end" size="small" id="closeButton" (click)="closeModal()"> Close
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-item>
+
   <ion-label position="stacked" class="filterTitle">Price Range</ion-label>
   <ion-range pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">400</ion-label>
   </ion-range>
-</ion-item>
 
-<ion-item>
+
   <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
-  <ion-button id="priceUpButton">Price
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
     <ion-icon slot="end" name="arrow-round-up"></ion-icon>
   </ion-button>
-  <ion-button id="priceDownButton">Price
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
     <ion-icon slot="end" name="arrow-round-down"></ion-icon>
   </ion-button>
-  <ion-button class="sortingButton">Relevance</ion-button>
-  <ion-button class="sortingButton">Most Recent</ion-button>
-</ion-item>
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Relevance</ion-button>
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Most Recent</ion-button>
 
-<ion-item>
-  <ion-label position="stacked" class="filterTitle">Filters</ion-label>
-  <ion-button class="filterButton">Only Show Posts with Images</ion-button>
-  <ion-button class="filterButton">Posted Today</ion-button>
-</ion-item>
+
+
+  <ion-label class="filterTitle">Filters</ion-label>
+  <ion-button [color]="buttonColor" class="filterButton" id="imagePosts" (click)="changeColor()">Only Show Posts with Images</ion-button>
+  <ion-button [color]="buttonColor" class="filterButton" id="todayPosts" (click)="changeColor()">Posted Today</ion-button>
+
+
+<ion-footer>
+  <ion-button id="submitButton" (click)="closeModal()">Save Changes</ion-button>
+</ion-footer>
+
 </ion-content>
