@@ -22,6 +22,10 @@ const routes: Routes = [
   {path: 'item-page',
     loadChildren: () => import('./item-page/item-page.module').then( m => m.ItemPageModule)
   },
+  {
+    path: 'item-page2',
+    loadChildren: () => import('./item-page2/item-page2.module').then( m => m.ItemPage2PageModule)
+  },
 ];
 @NgModule({
   imports: [

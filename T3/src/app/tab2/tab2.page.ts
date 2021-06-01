@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { MapModalComponent } from '../map-modal/map-modal.component';
+import { NavController} from "@ionic/angular";
+
 
 @Component({
   selector: 'app-tab2',
@@ -11,7 +13,7 @@ export class Tab2Page {
 
   type: string = "My Posts";
 
-  constructor(private modalctrl: ModalController) {}
+  constructor(private modalctrl: ModalController, public navctrl: NavController) {}
 
   async openModal(){
     const modal = await this.modalctrl.create({
@@ -20,5 +22,8 @@ export class Tab2Page {
     });
 
     await modal.present();
+  }
+  itemPage(){
+    this.navctrl.navigateForward('item-page2');
   }
 }

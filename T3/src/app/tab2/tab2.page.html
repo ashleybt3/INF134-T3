@@ -80,20 +80,20 @@
 
       <div [ngSwitch]="type" class="segment-list">
         <ion-list *ngSwitchCase="'My Posts'" class="item-list">
+          <ion-card (click) = "itemPage()">
+            <ion-card-header>
+              <ion-card-title>Notebooks</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              New Notebooks
+            </ion-card-content>
+          </ion-card>
           <ion-card>
             <ion-card-header>
               <ion-card-title>Textbooks</ion-card-title>
             </ion-card-header>
             <ion-card-content>
               Used Textbooks
-            </ion-card-content>
-          </ion-card>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Notebooks</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              New Notebooks
             </ion-card-content>
           </ion-card>
         </ion-list>
