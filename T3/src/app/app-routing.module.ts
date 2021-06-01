@@ -13,8 +13,10 @@ const routes: Routes = [
   {
     path: 'message-person',
     loadChildren: () => import('./message-person/message-person.module').then( m => m.MessagePersonPageModule)
-  }
-
+  },
+  {path: 'item-page',
+    loadChildren: () => import('./item-page/item-page.module').then( m => m.ItemPageModule)
+  },
 ];
 @NgModule({
   imports: [
