@@ -17,14 +17,13 @@
 
   <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
-    <ion-icon slot="end" name="arrow-round-up"></ion-icon>
+    <ion-icon slot="end" name="arrow-up-outline"></ion-icon>
   </ion-button>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
-    <ion-icon slot="end" name="arrow-round-down"></ion-icon>
+    <ion-icon slot="end" name="arrow-down-outline"></ion-icon>
   </ion-button>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Relevance</ion-button>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Most Recent</ion-button>
-
 
 
   <ion-label class="filterTitle">Filters</ion-label>
@@ -33,7 +32,7 @@
 
 
 <ion-footer>
-  <ion-button id="submitButton" (click)="closeModal()">Save Changes</ion-button>
+  <ion-button color=#0064A4 id="submitButton" (click)="closeModal()">Save Changes</ion-button>
 </ion-footer>
 
 </ion-content>
