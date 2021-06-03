@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="content">
 
   <ion-label position="stacked" class="filterTitle">Price Range</ion-label>
   <ion-range pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
@@ -16,19 +16,19 @@
 
 
   <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
+  <ion-button color="{{button1.color}}" class="filterButton" (click)="changeColor1()">Price
     <ion-icon slot="end" name="arrow-up-outline"></ion-icon>
   </ion-button>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
+  <ion-button color="{{button2.color}}" class="filterButton" (click)="changeColor2()">Price
     <ion-icon slot="end" name="arrow-down-outline"></ion-icon>
   </ion-button>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Relevance</ion-button>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Most Recent</ion-button>
+  <ion-button color="{{button3.color}}" class="filterButton" (click)="changeColor3()">Relevance</ion-button>
+  <ion-button color="{{button4.color}}" class="filterButton" (click)="changeColor4()">Most Recent</ion-button>
 
 
   <ion-label class="filterTitle">Filters</ion-label>
-  <ion-button [color]="buttonColor" class="filterButton" id="imagePosts" (click)="changeColor()">Only Show Posts with Images</ion-button>
-  <ion-button [color]="buttonColor" class="filterButton" id="todayPosts" (click)="changeColor()">Posted Today</ion-button>
+  <ion-button color="{{button5.color}}" class="filterButton" id="imagePosts" (click)="changeColor5()">Only Show Posts with Images</ion-button>
+  <ion-button color="{{button6.color}}" class="filterButton" id="todayPosts" (click)="changeColor6()">Posted Today</ion-button>
 
 
 <ion-footer>
