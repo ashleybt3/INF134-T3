@@ -2,6 +2,7 @@
    padding-bottom: 20px;
    top: 20px;
    margin: 5px;
+   color: black;
 }
 
 .filterButton {
@@ -18,4 +19,9 @@
     bottom: 30px;
     right: 0;
     background-color: #0064A4;
+}
+
+ion-range{
+    --pin-color: black;
+    
 }

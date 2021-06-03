@@ -8,12 +8,17 @@
 
 <ion-content class="content">
 
-  <ion-label position="stacked" class="filterTitle">Price Range</ion-label>
-  <ion-range pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
-    <ion-label slot="start">0</ion-label>
-    <ion-label slot="end">400</ion-label>
-  </ion-range>
+  <ion-label position="stacked" class="filterTitle" >Price Range</ion-label>
+  <ion-row style="height: 10px"></ion-row>
+  <ion-item style = "--background: rgb(32, 31, 31)">
+    <ion-range  pin="true" dual-knobs snaps="true" min="0" max="400" step="50">
+      <ion-label slot="start">0</ion-label>
+      <ion-label slot="end">400</ion-label>
+    </ion-range>
+  </ion-item>
+ 
 
+  <ion-row style="height: 20px"></ion-row>
 
   <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
   <ion-button color="{{button1.color}}" class="filterButton" (click)="changeColor1()">Price
@@ -25,8 +30,8 @@
   <ion-button color="{{button3.color}}" class="filterButton" (click)="changeColor3()">Relevance</ion-button>
   <ion-button color="{{button4.color}}" class="filterButton" (click)="changeColor4()">Most Recent</ion-button>
 
-
-  <ion-label class="filterTitle">Filters</ion-label>
+  <ion-row style="height: 10px"></ion-row>
+  <ion-label class="filterTitle">Filters:</ion-label>
   <ion-button color="{{button5.color}}" class="filterButton" id="imagePosts" (click)="changeColor5()">Only Show Posts with Images</ion-button>
   <ion-button color="{{button6.color}}" class="filterButton" id="todayPosts" (click)="changeColor6()">Posted Today</ion-button>
 
