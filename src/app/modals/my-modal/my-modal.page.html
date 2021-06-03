@@ -16,18 +16,18 @@
 
 
   <ion-label position="stacked" class="filterTitle">Sort By:</ion-label>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">High Price
     <ion-icon slot="end" name="arrow-round-up"></ion-icon>
   </ion-button>
-  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Price
+  <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Low Price
     <ion-icon slot="end" name="arrow-round-down"></ion-icon>
   </ion-button>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Relevance</ion-button>
   <ion-button [color]="buttonColor" class="filterButton" (click)="changeColor()">Most Recent</ion-button>
 
+  <ion-row style="height: 10px"></ion-row>
 
-
-  <ion-label class="filterTitle">Filters</ion-label>
+  <ion-label class="filterTitle">Filters:</ion-label>
   <ion-button [color]="buttonColor" class="filterButton" id="imagePosts" (click)="changeColor()">Only Show Posts with Images</ion-button>
   <ion-button [color]="buttonColor" class="filterButton" id="todayPosts" (click)="changeColor()">Posted Today</ion-button>
 
