@@ -1,59 +1,27 @@
 .filterTitle {
-   //font-size: 18px !important;
-   //padding: 10px;
-   padding-bottom: 20px;
-   top: 20px;
-   margin: 5px;
-}
-
-.filterButton {
-    background-color: gray;
-}
-
-// ion-item {
-//     margin-top: 10%;
-// }
-
-// .sortingButton {
-//     position: absolute;
-//     left: 80px;
-//     margin-bottom: 10px;
-// }
-
-
-// #priceDownButton {
-//     position: absolute;
-//     top: 30px;
-//     left: 80px;
-//     margin-bottom: 20px;
-//     //margin-right: 10px;
-// }
-
-// #priceUpButton {
-//     position: absolute;
-//     top: 30px;
-//     left: 150px;
-//     margin-left: 5px;
-// }
-
-// .filterButton {
-//     position: absolute;
-// }
-
-// #imagePosts {
-//    // left: 80px;
-//    top: 40px;
-//    margin-bottom: 20px;
-// }
-
-// #todayPosts {
-//     left: 70px;
-//     top: 8px;
-// }
-
-#submitButton {
-    position: fixed;
-    left: 0;
-    bottom: 30px;
-    right: 0;
-}
+    padding-bottom: 20px;
+    top: 20px;
+    margin: 5px;
+    color: black;
+ }
+ 
+ .filterButton {
+     background-color: #0064A4;
+ }
+ 
+ .content { 
+     --background:  #f5f5f5;
+ }
+ 
+ #submitButton {
+     position: fixed;
+     left: 0;
+     bottom: 30px;
+     right: 0;
+     background-color: #0064A4;
+ }
+ 
+ ion-range{
+     --pin-color: rgb(32, 31, 31);
+     
+ }

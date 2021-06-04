@@ -1,7 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
-
 declare var google;
 
 @Component({
@@ -57,9 +56,20 @@ export class MapModalComponent{
     }
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);
     this.addMarkersToMap();
+    this.map.addListener("click", (mapEvent => {
+      console.log(mapEvent);
+      this.addMarker(mapEvent);
+    }))
   }
 
   dismissModal(){
     this.modalctrl.dismiss();
+  }
+
+  addMarker(marker){
+    let x = new google.maps.Marker({
+      position: marker.latLng
+    });
+    x.setMap(this.map);
   }
 }
