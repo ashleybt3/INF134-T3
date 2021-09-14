@@ -11,4 +11,5 @@ Ashley Teves 10177429
 <br>
 
 # Project Summary
-The Student Marketplace App is a platform that allows a community of students to buy and sell personal items with each other.
+The Student Marketplace App is a platform that allows a community of students to buy and sell personal items with each other.<br>
+Public Web Server: https://ashleybt3.github.io/INF134-T3/
